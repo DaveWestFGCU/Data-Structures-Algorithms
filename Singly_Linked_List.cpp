@@ -1,6 +1,3 @@
-//
-// Created by Dave on 1/18/2024.
-//
 
 #include "Singly_Linked_List.h"
 
