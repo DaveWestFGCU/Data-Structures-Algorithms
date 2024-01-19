@@ -54,7 +54,7 @@ void Singly_Linked_List<T>::makeEmpty( ) {
 
 /**
  * Adds a node at the given index.
- * @param value (int) The value of the new node to be added.
+ * @param value (int) The _value of the new node to be added.
  * @param index (int) The index for the new node to be placed.
  * @return (bool) True if the given index is within the list. False the given
  * index is outside of the list.
@@ -107,7 +107,7 @@ bool Singly_Linked_List<T>::insert(T value, int index) {
 /**
  * Deletes a node at the given index.
  * @param index (int) Index at which to delete a node.
- * @return (int) Returns the value of the node that was deleted or -1 if the
+ * @return (int) Returns the _value of the node that was deleted or -1 if the
  * given index was outside of the list.
  */
 template <typename T>
@@ -143,7 +143,7 @@ T Singly_Linked_List<T>::remove(int index) {
         positionNode->_nextNode = deadNode->_nextNode;
     }
 
-    // Save node's value to return later
+    // Save node's _value to return later
     T tempValue = deadNode->_value;
     delete deadNode;
 
@@ -155,10 +155,10 @@ T Singly_Linked_List<T>::remove(int index) {
 
 
 /**
- * Searches the list for a node with the given value.
- * @param data (int) The value to search the list for.
- * @return (int) The index of the first node with the given value or -1 if the
- * value was not found within the list.
+ * Searches the list for a node with the given _value.
+ * @param data (int) The _value to search the list for.
+ * @return (int) The index of the first node with the given _value or -1 if the
+ * _value was not found within the list.
  */
 template <typename T>
 int Singly_Linked_List<T>::findIndex(T value) {
@@ -178,9 +178,9 @@ int Singly_Linked_List<T>::findIndex(T value) {
 
 
 /**
- * Returns a pointer to the value held by the node at the given index.
- * @param index - The index of the node from which to retrieve the value.
- * @return A void pointer to the value. Must be typecast for use.
+ * Returns a pointer to the _value held by the node at the given index.
+ * @param index - The index of the node from which to retrieve the _value.
+ * @return A void pointer to the _value. Must be typecast for use.
  */
 template <typename T>
 T Singly_Linked_List<T>::valueAt(int index) {
